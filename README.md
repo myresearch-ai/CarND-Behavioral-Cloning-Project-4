@@ -237,3 +237,4 @@ def get_augmented_row(row):
 References & Credits
 ---
 * [udacity self driving car nanodegree](https://classroom.udacity.com/nanodegrees/nd013/parts/168c60f1-cc92-450a-a91b-e427c326e6a7)
+* [NVIDIA: End to End Learning for Self-Driving Car](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf)
