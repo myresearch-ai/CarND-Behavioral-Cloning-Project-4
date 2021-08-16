@@ -4,14 +4,15 @@
 
 Overview
 ---
-This project is the fourth in the SDCND series - it builds upon computer vision fundamentals (image data manipulation & preprocessing) & **deep convolutional neural networks (D-CNN)** addressed in the previous project (project-3) where we predicted Germany traffic signs. The scope of this project is to develop a CNN that allows the car to achieve **perception** of its environment in order to autonomously navigate its environment (tracks). 
+This project is the fourth in the SDCND series - it builds upon computer vision fundamentals (image data manipulation & preprocessing) & **deep convolutional neural networks (CNNs)** addressed in the previous project (project-3) where we predicted Germany traffic signs. The scope of this project is to develop a CNN that allows the car to achieve **perception** of its environment in order to autonomously navigate its environment (tracks). 
 
 This project repo contains the following required files:
 
 * model.py
-* drive.py (modified)
+* drive.py
 * model.h5 & model.json
 * video.mp4 (a video recording of the vehicle driving autonomously in its environment)
+* requirements.txt (An option to the [CarND-term-1 starter kit](https://github.com/udacity/CarND-Term1-Starter-Kit) to set up environment to re-implement or run the pretrained model)
 
 Goals
 ---
@@ -48,10 +49,13 @@ The data is generated from 3 cameras mounted on the vehicle which shows **left**
 
 Basic image manipulation and preprocessing techniques were applied, following NVIDIA's approach, the following preprocessing techniques were applied;
 
-* **Normalization** - this was done using Keras Lambda layer
-* **Cropping** - Performed to remove less useful portions of video frames (images) that may negatively impact the model's performance
-* **RGB Conversion** - Images were converted to RGB format before feature extraction
-* **Augmentation** - Image flipping was performed for data augmentation
+
+|**Technique**|**Description/Comment**|
+|-------------|---------------|
+|*Normalization*| This was done using Keras Lambda layer|
+|*Cropping*|Performed to remove less useful portions of video frames (images) that may negatively impact the model's performance|
+|*RGB Conversion*|Images were converted to RGB format before feature extraction|
+|*Augmentation*|Image flipping was performed for data augmentation|
 
 Additionally, an offset factor was used to manipulate steering values to allow *smooth* driving of the car. Straight driving dominated the track, to prevent overfitting and biased training to straight driving, it was recommended to apply the offset.
  
