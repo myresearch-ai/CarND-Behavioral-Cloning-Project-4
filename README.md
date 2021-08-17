@@ -54,7 +54,7 @@ Basic image manipulation and preprocessing techniques were applied, following NV
 |-------------|---------------|
 |*Normalization*| This was done using Keras Lambda layer|
 |*Cropping*|Performed to remove less useful portions of video frames (images) that may negatively impact the model's performance|
-|*RGB Conversion*|Images were converted to RGB format before feature extraction|
+|*RGB Transformation*|Images were converted to RGB format before feature extraction|
 |*Augmentation*|Image flipping was performed for data augmentation|
 
 Additionally, an offset factor was used to manipulate steering values to allow *smooth* driving of the car. Straight driving dominated the track, to prevent overfitting and biased training to straight driving, it was recommended to apply the offset.
